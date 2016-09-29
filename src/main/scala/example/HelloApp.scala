@@ -7,7 +7,7 @@ class HelloApp extends AppMain{
   override def run(appConfiguration: AppConfiguration): MainResult = {
     val scalaVersion = appConfiguration.provider.scalaProvider.version
 
-    val arguments=appConfiguration.arguments.toList
+    val arguments=appConfiguration.arguments
     arguments.foreach {
       case (_) => println(_)
     }
